@@ -21,32 +21,53 @@
       </span>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-white uppercase tracking-wide">Resources</h2>
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase tracking-wide">Explore</h2>
           <ul class="text-white/70 font-medium">
             <li class="mb-4">
-              <a href="https://flowbite.com/" class="hover:text-white hover:underline">Flowbite</a>
+              <a routerLink="/books" class="hover:text-white hover:underline">All books</a>
+            </li>
+            <li class="mb-4">
+              <a routerLink="/categories" class="hover:text-white hover:underline">Categories</a>
+            </li>
+            <li class="mb-4">
+              <a routerLink="/about" class="hover:text-white hover:underline">About us</a>
             </li>
             <li>
-              <a href="https://tailwindcss.com/" class="hover:text-white hover:underline"
-                >Tailwind CSS</a
-              >
+              <a routerLink="/contact" class="hover:text-white hover:underline">Contact</a>
             </li>
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-white uppercase tracking-wide">Follow us</h2>
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase tracking-wide">Get in touch</h2>
           <ul class="text-white/70 font-medium">
             <li class="mb-4">
               <a
-                href="https://github.com/themesberg/flowbite"
-                class="hover:text-white hover:underline"
-                >Github</a
+                href="mailto:mr.rossy2020@gmail.com"
+                class="inline-flex items-center gap-2 hover:text-white hover:underline"
               >
+                <i class="fa-solid fa-envelope text-xs text-secondary" aria-hidden="true"></i>
+                Email us
+              </a>
+            </li>
+            <li class="mb-4">
+              <a
+                href="https://wa.me/201064744973"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 hover:text-white hover:underline"
+              >
+                <i class="fa-brands fa-whatsapp text-sm text-secondary" aria-hidden="true"></i>
+                WhatsApp
+              </a>
             </li>
             <li>
-              <a href="https://discord.gg/4eeurUVvTy" class="hover:text-white hover:underline"
-                >Discord</a
-              >
+              <span class="inline-flex items-start gap-2">
+                <i
+                  class="fa-solid fa-location-dot mt-0.5 text-xs text-secondary"
+                  aria-hidden="true"
+                ></i>
+                Al Rehab City, New Cairo
+              </span>
             </li>
           </ul>
         </div>
