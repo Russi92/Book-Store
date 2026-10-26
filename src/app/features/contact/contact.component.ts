@@ -25,7 +25,7 @@ export class ContactComponent {
       alert('your message send successfully');
       this.ContactUsForm.reset();
     } else {
-      alert('your message not valid');
+      this.ContactUsForm.markAllAsTouched()
     }
   }
 }
