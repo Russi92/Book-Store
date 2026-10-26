@@ -1,3 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "tailwindcss";
+@import 'tailwindcss';
+@import 'flowbite/src/themes/default';
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme {
+  /* Headings / brand */
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+
+  /* Body, UI, forms, prices */
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  /* colors */
+  --color-primary: #7b2d3b; /* buttons, Links, icons, navbar */
+  --color-primary-dark: #5c1f2a; /* hover / active */
+  --color-secondary: #c8a24a; /*stars Evaluation*/
+  --color-surface: #faf7f2; /* bg website */
+  --color-ink: #1c1917; /* text colors */
+  /* colors */
+}
+
+body {
+  background-color: var(--color-surface);
+}

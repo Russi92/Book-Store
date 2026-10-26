@@ -1,0 +1,52 @@
+:host {
+  display: block;
+  /* keeps the left/right reveal animation from creating a horizontal scrollbar on mobile */
+  overflow-x: clip;
+}
+
+/* ---------- Scroll reveal keyframes ---------- */
+@keyframes reveal-from-left {
+  from {
+    opacity: 0;
+    transform: translate3d(-56px, 0, 0) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes reveal-from-right {
+  from {
+    opacity: 0;
+    transform: translate3d(56px, 0, 0) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+/*
+  Pure CSS scroll-driven animation (no JS needed).
+  Supported in Chrome/Edge 115+, Safari 26+. Other browsers simply show the cards.
+*/
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal-left,
+    .reveal-right {
+      animation-fill-mode: both;
+      animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+      animation-timeline: view();
+      animation-range: entry 10% cover 30%;
+    }
+
+    .reveal-left {
+      animation-name: reveal-from-left;
+    }
+
+    .reveal-right {
+      animation-name: reveal-from-right;
+    }
+  }
+}
