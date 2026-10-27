@@ -10,34 +10,28 @@
 <!-- footer -->
 <app-footer></app-footer>
 
-
 <!-- spiner loading -->
-<ngx-spinner
-  bdColor="rgba(0,0,0,0.8)"
-  [fullScreen]="true"
-  [zIndex]="99999"
-  [showSpinner]="false"
->
-  <div class="flex flex-col items-center gap-3">
-    <img src="/assets/logo.svg" alt="Logo" width="100" />
+<ngx-spinner bdColor="rgba(0,0,0,0.8)" [fullScreen]="true" [zIndex]="99999" [showSpinner]="false">
+  <div class="relative flex items-center justify-center w-40 h-40">
+    <!-- Logo -->
+    <img src="/assets/logo.svg" alt="Book Haven" class="w-20 h-20 object-contain" />
 
-    <span
-      class="flex items-center gap-1 font-display text-2xl font-bold text-white tracking-tight"
-    >
-      Book
-      <span
-        class="grid place-items-center w-2 h-2 rounded-full bg-secondary"
-      >
-        <svg class="w-4 h-4 text-white" ...>...</svg>
-      </span>
-      <span class="text-secondary">Haven</span>
-    </span>
-
-    <span
-      class="hidden sm:block rounded-full text-[10px] tracking-[0.2em] uppercase text-ink p-1 mt-1 bg-surface"
-    >
-      Your next great read
-    </span>
+    <!-- Circular text -->
+    <div class="absolute inset-0 animate-spin [animation-duration:6s]">
+      <svg viewBox="0 0 160 160" class="w-full h-full">
+        <defs>
+          <path id="circlePath" d="M 80,80 m -60,0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" />
+        </defs>
+        <text
+          fill="currentColor"
+          class="text-secondary font-bold"
+          font-size="12"
+          letter-spacing="2"
+        >
+          <textPath href="#circlePath">BOOK • HAVEN</textPath>
+        </text>
+      </svg>
+    </div>
   </div>
 </ngx-spinner>
 <!-- spiner loading -->
