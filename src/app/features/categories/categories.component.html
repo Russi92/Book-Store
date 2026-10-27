@@ -1,1 +1,438 @@
-<p>categories works!</p>
+<!-- ============ HERO ============ -->
+  <section class="relative overflow-hidden bg-surface pt-24 pb-12 sm:pt-28 lg:pt-32">
+  <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+    <div class="blob-a absolute -top-32 right-0 h-80 w-80 rounded-full bg-primary/10 blur-3xl"></div>
+    <div class="blob-b absolute top-10 -left-24 h-64 w-64 rounded-full bg-secondary/15 blur-3xl"></div>
+  </div>
+
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <nav aria-label="Breadcrumb" class="hero-rise text-xs text-ink/50">
+      <ol class="flex items-center gap-2">
+        <li><a routerLink="/" class="hover:text-primary">Home</a></li>
+        <li aria-hidden="true"><i class="fa-solid fa-chevron-right text-[8px]"></i></li>
+        <li class="font-medium text-ink/70" aria-current="page">Categories</li>
+      </ol>
+    </nav>
+
+    <div class="mt-5 flex flex-wrap items-end justify-between gap-6">
+      <div>
+        <h1
+          class="hero-rise hero-delay-1 bg-linear-to-r from-primary-dark via-primary to-[#A85463] bg-clip-text font-display text-3xl leading-tight font-bold text-transparent sm:text-4xl lg:text-5xl"
+        >
+          Browse categories
+        </h1>
+        <p class="hero-rise hero-delay-2 mt-4 max-w-2xl text-sm leading-relaxed text-ink/60 sm:text-base">
+          Eight shelves, one library. Pick the mood you're in and we'll take you straight to the
+          right aisle.
+        </p>
+      </div>
+    </div>
+
+    <!-- stats -->
+    <dl
+      class="hero-rise hero-delay-3 mt-8 grid max-w-xl grid-cols-3 divide-x divide-ink/10 overflow-hidden rounded-2xl border border-ink/10 bg-white/70 shadow-sm backdrop-blur"
+    >
+      <div class="px-4 py-4 text-center sm:px-6">
+        <dt class="text-[10px] font-semibold tracking-[0.15em] text-ink/40 uppercase">Shelves</dt>
+        <dd class="mt-1 font-display text-xl font-bold text-primary sm:text-2xl">8</dd>
+      </div>
+      <div class="px-4 py-4 text-center sm:px-6">
+        <dt class="text-[10px] font-semibold tracking-[0.15em] text-ink/40 uppercase">Titles</dt>
+        <dd class="mt-1 font-display text-xl font-bold text-primary sm:text-2xl">971</dd>
+      </div>
+      <div class="px-4 py-4 text-center sm:px-6">
+        <dt class="text-[10px] font-semibold tracking-[0.15em] text-ink/40 uppercase">Updated</dt>
+        <dd class="mt-1 font-display text-xl font-bold text-primary sm:text-2xl">Weekly</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ CATEGORY GRID ============ -->
+<section class="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8 lg:pb-24">
+  <div class="category-grid grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <!-- 1 -->
+    <a
+      routerLink="/books"
+      data-reveal
+      class="group relative flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-2xl focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20"
+    >
+      <span
+        class="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full bg-linear-to-br from-primary/10 to-secondary/15 blur-2xl transition duration-700 group-hover:scale-150"
+        aria-hidden="true"
+      ></span>
+
+      <span
+        class="relative grid h-12 w-12 place-items-center rounded-xl bg-linear-to-br from-[#1e3a8a] to-[#0f1f4d] text-white shadow-md transition duration-500 group-hover:-rotate-6 group-hover:scale-110"
+      >
+        <i class="fa-solid fa-code" aria-hidden="true"></i>
+      </span>
+
+      <span class="relative mt-4 flex items-center justify-between gap-2">
+        <span class="font-display text-lg font-bold text-ink">Programming</span>
+        <span
+          class="rounded-full bg-primary/5 px-2 py-0.5 text-[10px] font-semibold text-primary/80"
+          >248</span
+        >
+      </span>
+      <span class="relative mt-1.5 text-sm leading-relaxed text-ink/55">
+        Clean code, architecture, and the craft of building software.
+      </span>
+
+      <span class="relative mt-5 inline-flex items-center gap-2 text-xs font-semibold text-primary">
+        Browse books
+        <i
+          class="fa-solid fa-arrow-right text-[10px] transition duration-300 group-hover:translate-x-1"
+          aria-hidden="true"
+        ></i>
+      </span>
+
+      <span
+        class="absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 bg-linear-to-r from-primary to-secondary transition-transform duration-500 group-hover:scale-x-100"
+        aria-hidden="true"
+      ></span>
+    </a>
+
+    <!-- 2 -->
+    <a
+      routerLink="/books"
+      data-reveal
+      class="group relative flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-primary/25 hover:shadow-2xl focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20"
+    >
+      <span
+        class="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full bg-linear-to-br from-primary/10 to-secondary/15 blur-2xl transition duration-700 group-hover:scale-150"
+        aria-hidden="true"
+      ></span>
+
+      <span
+        class="relative grid h-12 w-12 place-items-center rounded-xl bg-linear-to-br from-[#4c1d95] to-[#250e4a] text-white shadow-md transition duration-500 group-hover:-rotate-6 group-hover:scale-110"
+      >
+        <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+      </span>
+
+      <span class="relative mt-4 flex items-center justify-between gap-2">
+        <span class="font-display text-lg font-bold text-ink">Science Fiction</span>
+        <span
+          class="rounded-full bg-primary/5 px-2 py-0.5 text-[10px] font-semibold text-primary/80"
+          >164</span
+        >
+      </span>
+      <span class="relative mt-1.5 text-sm leading-relaxed text-ink/55">
+        Distant worlds, deep futures, and ideas that stretch reality.
+      </span>
+
+      <span class="relative mt-5 inline-flex items-center gap-2 text-xs font-semibold text-primary">
+        Browse books
+        <i
+          class="fa-solid fa-arrow-right text-[10px] transition duration-300 group-hover:translate-x-1"
+          aria-hidden="true"
+        ></i>
+      </span>
+
+      <span
+        class="absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 bg-linear-to-r from-primary to-secondary transition-transform duration-500 group-hover:scale-x-100"
+        aria-hidden="true"
+      ></span>
+    </a>
+
+    <!-- 3 -->
+    <a
+      routerLink="/books"
+      data-reveal
+      class="group relative flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-primary/25 hover:shadow-2xl focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20"
+    >
+      <span
+        class="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full bg-linear-to-br from-primary/10 to-secondary/15 blur-2xl transition duration-700 group-hover:scale-150"
+        aria-hidden="true"
+      ></span>
+
+      <span
+        class="relative grid h-12 w-12 place-items-center rounded-xl bg-linear-to-br from-[#7f1d1d] to-[#3f0e0e] text-white shadow-md transition duration-500 group-hover:-rotate-6 group-hover:scale-110"
+      >
+        <i class="fa-solid fa-landmark" aria-hidden="true"></i>
+      </span>
+
+      <span class="relative mt-4 flex items-center justify-between gap-2">
+        <span class="font-display text-lg font-bold text-ink">Classics</span>
+        <span
+          class="rounded-full bg-primary/5 px-2 py-0.5 text-[10px] font-semibold text-primary/80"
+          >132</span
+        >
+      </span>
+      <span class="relative mt-1.5 text-sm leading-relaxed text-ink/55">
+        The books that shaped generations — and still hold up today.
+      </span>
+
+      <span class="relative mt-5 inline-flex items-center gap-2 text-xs font-semibold text-primary">
+        Browse books
+        <i
+          class="fa-solid fa-arrow-right text-[10px] transition duration-300 group-hover:translate-x-1"
+          aria-hidden="true"
+        ></i>
+      </span>
+
+      <span
+        class="absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 bg-linear-to-r from-primary to-secondary transition-transform duration-500 group-hover:scale-x-100"
+        aria-hidden="true"
+      ></span>
+    </a>
+
+    <!-- 4 -->
+    <a
+      routerLink="/books"
+      data-reveal
+      class="group relative flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-primary/25 hover:shadow-2xl focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20"
+    >
+      <span
+        class="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full bg-linear-to-br from-primary/10 to-secondary/15 blur-2xl transition duration-700 group-hover:scale-150"
+        aria-hidden="true"
+      ></span>
+
+      <span
+        class="relative grid h-12 w-12 place-items-center rounded-xl bg-linear-to-br from-[#a16207] to-[#523203] text-white shadow-md transition duration-500 group-hover:-rotate-6 group-hover:scale-110"
+      >
+        <i class="fa-solid fa-scroll" aria-hidden="true"></i>
+      </span>
+
+      <span class="relative mt-4 flex items-center justify-between gap-2">
+        <span class="font-display text-lg font-bold text-ink">History</span>
+        <span
+          class="rounded-full bg-primary/5 px-2 py-0.5 text-[10px] font-semibold text-primary/80"
+          >118</span
+        >
+      </span>
+      <span class="relative mt-1.5 text-sm leading-relaxed text-ink/55">
+        How we got here — civilisations, wars, and quiet revolutions.
+      </span>
+
+      <span class="relative mt-5 inline-flex items-center gap-2 text-xs font-semibold text-primary">
+        Browse books
+        <i
+          class="fa-solid fa-arrow-right text-[10px] transition duration-300 group-hover:translate-x-1"
+          aria-hidden="true"
+        ></i>
+      </span>
+
+      <span
+        class="absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 bg-linear-to-r from-primary to-secondary transition-transform duration-500 group-hover:scale-x-100"
+        aria-hidden="true"
+      ></span>
+    </a>
+
+    <!-- 5 -->
+    <a
+      routerLink="/books"
+      data-reveal
+      class="group relative flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-primary/25 hover:shadow-2xl focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20"
+    >
+      <span
+        class="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full bg-linear-to-br from-primary/10 to-secondary/15 blur-2xl transition duration-700 group-hover:scale-150"
+        aria-hidden="true"
+      ></span>
+
+      <span
+        class="relative grid h-12 w-12 place-items-center rounded-xl bg-linear-to-br from-[#3f6212] to-[#1f3306] text-white shadow-md transition duration-500 group-hover:-rotate-6 group-hover:scale-110"
+      >
+        <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+      </span>
+
+      <span class="relative mt-4 flex items-center justify-between gap-2">
+        <span class="font-display text-lg font-bold text-ink">Self-help</span>
+        <span
+          class="rounded-full bg-primary/5 px-2 py-0.5 text-[10px] font-semibold text-primary/80"
+          >96</span
+        >
+      </span>
+      <span class="relative mt-1.5 text-sm leading-relaxed text-ink/55">
+        Habits, focus, and the small changes that quietly compound.
+      </span>
+
+      <span class="relative mt-5 inline-flex items-center gap-2 text-xs font-semibold text-primary">
+        Browse books
+        <i
+          class="fa-solid fa-arrow-right text-[10px] transition duration-300 group-hover:translate-x-1"
+          aria-hidden="true"
+        ></i>
+      </span>
+
+      <span
+        class="absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 bg-linear-to-r from-primary to-secondary transition-transform duration-500 group-hover:scale-x-100"
+        aria-hidden="true"
+      ></span>
+    </a>
+
+    <!-- 6 -->
+    <a
+      routerLink="/books"
+      data-reveal
+      class="group relative flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-primary/25 hover:shadow-2xl focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20"
+    >
+      <span
+        class="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full bg-linear-to-br from-primary/10 to-secondary/15 blur-2xl transition duration-700 group-hover:scale-150"
+        aria-hidden="true"
+      ></span>
+
+      <span
+        class="relative grid h-12 w-12 place-items-center rounded-xl bg-linear-to-br from-[#166534] to-[#0a3320] text-white shadow-md transition duration-500 group-hover:-rotate-6 group-hover:scale-110"
+      >
+        <i class="fa-solid fa-dragon" aria-hidden="true"></i>
+      </span>
+
+      <span class="relative mt-4 flex items-center justify-between gap-2">
+        <span class="font-display text-lg font-bold text-ink">Fantasy</span>
+        <span
+          class="rounded-full bg-primary/5 px-2 py-0.5 text-[10px] font-semibold text-primary/80"
+          >87</span
+        >
+      </span>
+      <span class="relative mt-1.5 text-sm leading-relaxed text-ink/55">
+        Magic systems, epic quests, and worlds worth getting lost in.
+      </span>
+
+      <span class="relative mt-5 inline-flex items-center gap-2 text-xs font-semibold text-primary">
+        Browse books
+        <i
+          class="fa-solid fa-arrow-right text-[10px] transition duration-300 group-hover:translate-x-1"
+          aria-hidden="true"
+        ></i>
+      </span>
+
+      <span
+        class="absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 bg-linear-to-r from-primary to-secondary transition-transform duration-500 group-hover:scale-x-100"
+        aria-hidden="true"
+      ></span>
+    </a>
+
+    <!-- 7 -->
+    <a
+      routerLink="/books"
+      data-reveal
+      class="group relative flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-primary/25 hover:shadow-2xl focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20"
+    >
+      <span
+        class="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full bg-linear-to-br from-primary/10 to-secondary/15 blur-2xl transition duration-700 group-hover:scale-150"
+        aria-hidden="true"
+      ></span>
+
+      <span
+        class="relative grid h-12 w-12 place-items-center rounded-xl bg-linear-to-br from-[#0f766e] to-[#083f3b] text-white shadow-md transition duration-500 group-hover:-rotate-6 group-hover:scale-110"
+      >
+        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+      </span>
+
+      <span class="relative mt-4 flex items-center justify-between gap-2">
+        <span class="font-display text-lg font-bold text-ink">Business</span>
+        <span
+          class="rounded-full bg-primary/5 px-2 py-0.5 text-[10px] font-semibold text-primary/80"
+          >74</span
+        >
+      </span>
+      <span class="relative mt-1.5 text-sm leading-relaxed text-ink/55">
+        Strategy, startups, and the thinking behind the decisions.
+      </span>
+
+      <span class="relative mt-5 inline-flex items-center gap-2 text-xs font-semibold text-primary">
+        Browse books
+        <i
+          class="fa-solid fa-arrow-right text-[10px] transition duration-300 group-hover:translate-x-1"
+          aria-hidden="true"
+        ></i>
+      </span>
+
+      <span
+        class="absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 bg-linear-to-r from-primary to-secondary transition-transform duration-500 group-hover:scale-x-100"
+        aria-hidden="true"
+      ></span>
+    </a>
+
+    <!-- 8 -->
+    <a
+      routerLink="/books"
+      data-reveal
+      class="group relative flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-primary/25 hover:shadow-2xl focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/20"
+    >
+      <span
+        class="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full bg-linear-to-br from-primary/10 to-secondary/15 blur-2xl transition duration-700 group-hover:scale-150"
+        aria-hidden="true"
+      ></span>
+
+      <span
+        class="relative grid h-12 w-12 place-items-center rounded-xl bg-linear-to-br from-[#9d174d] to-[#4c0b26] text-white shadow-md transition duration-500 group-hover:-rotate-6 group-hover:scale-110"
+      >
+        <i class="fa-solid fa-feather-pointed" aria-hidden="true"></i>
+      </span>
+
+      <span class="relative mt-4 flex items-center justify-between gap-2">
+        <span class="font-display text-lg font-bold text-ink">Poetry</span>
+        <span
+          class="rounded-full bg-primary/5 px-2 py-0.5 text-[10px] font-semibold text-primary/80"
+          >52</span
+        >
+      </span>
+      <span class="relative mt-1.5 text-sm leading-relaxed text-ink/55">
+        Fewer words, more feeling — verse for slow evenings.
+      </span>
+
+      <span class="relative mt-5 inline-flex items-center gap-2 text-xs font-semibold text-primary">
+        Browse books
+        <i
+          class="fa-solid fa-arrow-right text-[10px] transition duration-300 group-hover:translate-x-1"
+          aria-hidden="true"
+        ></i>
+      </span>
+
+      <span
+        class="absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 bg-linear-to-r from-primary to-secondary transition-transform duration-500 group-hover:scale-x-100"
+        aria-hidden="true"
+      ></span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8 lg:pb-28">
+  <div
+    data-reveal
+    class="relative overflow-hidden rounded-3xl bg-primary-dark px-6 py-9 shadow-xl shadow-primary-dark/20 sm:px-10 lg:px-12 lg:py-11"
+  >
+    <div
+      class="pointer-events-none absolute -top-24 -right-16 h-64 w-64 rounded-full border border-white/10"
+      aria-hidden="true"
+    ></div>
+    <div
+      class="pointer-events-none absolute -top-16 -right-8 h-48 w-48 rounded-full border border-white/10"
+      aria-hidden="true"
+    ></div>
+
+    <div class="relative flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+      <div>
+        <p class="text-[11px] font-bold tracking-[0.2em] text-secondary uppercase">
+          Can't find your shelf?
+        </p>
+        <h2 class="mt-3 font-display text-2xl leading-tight font-bold text-white sm:text-3xl">
+          Tell us the title — we'll hunt it down.
+        </h2>
+        <p class="mt-3 max-w-xl text-sm leading-relaxed text-white/70 sm:text-base">
+          If it exists in print, there's a good chance we can order it for you.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <a
+          routerLink="/contact"
+          class="inline-flex items-center gap-2 rounded-lg bg-secondary px-5 py-3 text-sm font-semibold text-black transition hover:bg-secondary/80 focus:outline-none focus-visible:ring-4 focus-visible:ring-white/20"
+        >
+          <i class="fa-solid fa-envelope text-xs" aria-hidden="true"></i>
+          Request a book
+        </a>
+        <a
+          routerLink="/books"
+          class="inline-flex items-center gap-2 rounded-lg border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10 focus:outline-none focus-visible:ring-4 focus-visible:ring-white/20"
+        >
+          Browse all books
+          <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

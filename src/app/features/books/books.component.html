@@ -122,13 +122,15 @@
         <div
           class="relative aspect-3/4 overflow-hidden bg-linear-to-br from-[#264653] to-[#12262e] p-5"
         >
-          <img
-            [src]="coverUrl(book)"
-            [alt]="'Cover of ' + book.title"
-            loading="lazy"
-            decoding="async"
-            class="absolute inset-0 h-full w-full object-cover"
-          />
+          <a [routerLink]="['/book-details', book.id, book.title]" class="cursor-pointer">
+            <img
+              [src]="coverUrl(book)"
+              [alt]="'Cover of ' + book.title"
+              loading="lazy"
+              decoding="async"
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+          </a>
           <span
             class="absolute top-3 left-3 max-w-[85%] truncate rounded-full bg-black/25 px-2.5 py-1 text-[10px] font-semibold tracking-wider text-white uppercase backdrop-blur-sm"
           >
@@ -157,8 +159,9 @@
           <ul class="flex flex-wrap items-center justify-between gap-1.5">
             <li
               class="rounded-full bg-primary/5 px-2 py-0.5 text-[10px] font-medium tracking-wide text-primary/80"
-              >Book Code: #{{ book.isbn.slice(0, 5) }}</li
             >
+              Book Code: #{{ book.isbn.slice(0, 5) }}
+            </li>
             @if (book.available === true) {
               <li
                 class="rounded-full bg-primary/5 py-0.5 text-[10px] font-medium tracking-wide text-primary/80"

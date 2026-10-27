@@ -12,4 +12,8 @@ export class BooksService {
   getAllBooks(): Observable<any> {
     return this.httpClient.get(`${environment.baseUrl}/api/Books`);
   }
+
+  getSpecificBook(bookId: string): Observable<any> {
+    return this.httpClient.get(`${environment.baseUrl}/api/Books/${bookId}`);
+  }
 }

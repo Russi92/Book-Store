@@ -5,31 +5,45 @@ export const routes: Routes = [
   // { path: '', redirectTo: '', pathMatch: 'full' },
   {
     path: '',
-    loadComponent: () => import('./features/home/home.component').then((c) => c.HomeComponent),title:'Home | Book Haven'
+    loadComponent: () => import('./features/home/home.component').then((c) => c.HomeComponent),
+    title: 'Home | Book Haven',
   },
   {
     path: 'books',
-    loadComponent: () => import('./features/books/books.component').then((c) => c.BooksComponent),title:'Books | Book Haven'
+    loadComponent: () => import('./features/books/books.component').then((c) => c.BooksComponent),
+    title: 'Books | Book Haven',
   },
   {
     path: 'categories',
     loadComponent: () =>
-      import('./features/categories/categories.component').then((c) => c.CategoriesComponent),title:'Categories | Book Haven'
+      import('./features/categories/categories.component').then((c) => c.CategoriesComponent),
+    title: 'Categories | Book Haven',
   },
   {
     path: 'about',
-    loadComponent: () => import('./features/about/about.component').then((c) => c.AboutComponent),title:'About | Book Haven'
+    loadComponent: () => import('./features/about/about.component').then((c) => c.AboutComponent),
+    title: 'About | Book Haven',
   },
   {
     path: 'contact',
     loadComponent: () =>
-      import('./features/contact/contact.component').then((c) => c.ContactComponent),title:'Contact | Book Haven'
+      import('./features/contact/contact.component').then((c) => c.ContactComponent),
+    title: 'Contact | Book Haven',
   },
   {
     path: 'terms&conditions',
     loadComponent: () => import('./features/terms/terms.component').then((c) => c.TermsComponent),
     title: 'Terms & Conditions | Book Haven',
   },
-  {path : "privacy&policy" , loadComponent : () => import('./features/privacy/privacy.component').then((c) => c.PrivacyComponent)},
+  {
+    path: 'book-details/:id/:title',
+    loadComponent: () =>
+      import('./features/book-details/book-details.component').then((c) => c.BookDetailsComponent),
+  },
+  {
+    path: 'privacy&policy',
+    loadComponent: () =>
+      import('./features/privacy/privacy.component').then((c) => c.PrivacyComponent),
+  },
   { path: '**', component: NotFoundComponent },
 ];
